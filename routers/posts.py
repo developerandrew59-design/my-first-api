@@ -10,7 +10,7 @@ from fastapi import FastAPI, HTTPException,Response,status,Depends,APIRouter
 
 router=APIRouter(
     prefix="/posts",
-    tags=['Users']
+    tags=['Posts']
 )
 
 @router.get("/",response_model=List[schemas.Postout])
