@@ -22,7 +22,7 @@ depends_on: Union[str, Sequence[str], None] = None
 def upgrade() -> None:
     op.add_column('posts',sa.Column('account_id',sa.Integer(),nullable=False))
     op.create_foreign_key('posts_account_fkey',source_table="posts",referent_table="account",
-    local_cols=['account_id'],remote_cols=['id'],ondelete=CASCADE)
+    local_cols=['account_id'],remote_cols=['id'],ondelete="CASCADE")
     pass
 
 
