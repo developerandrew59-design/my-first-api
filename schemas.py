@@ -17,6 +17,7 @@ class UserOut(BaseModel):
     email:EmailStr
     id:int
     created_at:datetime 
+    phone_number: Optional[str] = None
     class config():
         orm_mode=True
 
@@ -38,6 +39,7 @@ class Postout(BaseModel):
 class UserCreate(BaseModel):
     email:EmailStr
     password:str 
+    phone_number: Optional[str] = None
 
 
         
