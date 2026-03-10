@@ -1,5 +1,4 @@
 from enum import auto
-from warnings import deprecated
 import bcrypt
 from fastapi import FastAPI, HTTPException,Response,status,Depends
 from fastapi.params import Body
@@ -53,7 +52,7 @@ app.include_router(auth.router)
 app.include_router(vote.router)             
 @app.get("/")
 def props():
-    return {"message":"that's not cool"}
+    return {"message":"lets gooo!!!"}
 
 
 
