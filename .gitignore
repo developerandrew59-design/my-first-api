@@ -3,3 +3,5 @@ venv/
 .env
 *.pyc
 docker-compose-dev.yml
+calc.py
+tests/my_test.py
